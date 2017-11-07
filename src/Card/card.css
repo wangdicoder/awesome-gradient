@@ -1,0 +1,21 @@
+.card-container {
+    margin: 25px;
+    box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+}
+
+.color-panel {
+    width: 150px;
+    height: 150px;
+}
+
+.label-panel {
+    padding: 10px 15px;
+    background-color: #fff;
+}
+
+.label-panel span{
+    display: block;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.5;
+}
