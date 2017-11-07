@@ -9,10 +9,12 @@ class App extends Component {
         return (
             <div className="App">
                 <header>
-                    <a className="github-button" href="https://github.com/wangdicoder/awesome-gradient" data-size="large" data-show-count="true" aria-label="Star wangdicoder/awesome-gradient on GitHub">Star</a>
+                    <h1>Awesome Gradient</h1>
+                    <a className="github-button" href="https://github.com/wangdicoder/awesome-gradient"
+                       data-show-count="true" aria-label="Star wangdicoder/awesome-gradient on GitHub">Star</a>
                 </header>
                 <main>
-                    {values.map((item, i)=>{
+                    {values.map((item, i) => {
                         return <Card key={i} backgroundImage={item}/>
                     })}
                 </main>

@@ -1,4 +1,6 @@
 export default [
-    'linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%)',
-    'linear-gradient(135deg, #FEB692 10%, #EA5455 100%)'
+    'linear-gradient(45deg, #3a67b0, #3bd2f3)',
+    'linear-gradient(45deg, #3e9fb5, #69d1cf)',
+    'linear-gradient(45deg, #f791a7, #ffa26e)',
+    'linear-gradient(45deg, #aaafe3, #dd8ce8)'
 ]

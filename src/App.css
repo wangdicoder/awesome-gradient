@@ -7,3 +7,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
+header{
+    padding-top: 50px;
+}
