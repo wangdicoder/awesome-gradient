@@ -38,7 +38,11 @@ export default class Card extends Component {
         const end = backgroundImage.indexOf(')');
         const substr = backgroundImage.substr(start + 1, end - start - 1);
         return substr.split(',').map((item, i) => {
-            return <span key={i} style={{textTransform: i === 0 ? 'lowercase' : 'uppercase'}}>{item.trim()}</span>
+            if(i === 0){
+                return <div key={i} className="color-desc">{item.trim()}</div>;
+            }else {
+                return <div key={i} className="color-desc"><div className="color-previewer" style={{background: item.trim()}}/>{item.trim().toUpperCase()}</div>;
+            }
         })
     }
 

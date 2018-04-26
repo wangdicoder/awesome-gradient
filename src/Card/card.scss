@@ -32,11 +32,19 @@ $border-radius: 10px;
   border-bottom-right-radius: $border-radius;
 }
 
-.label-panel span {
+.label-panel .color-desc {
   display: block;
   font-size: 13px;
   text-align: left;
   line-height: 1.5;
+}
+
+.label-panel .color-previewer {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 5px;
 }
 
 .clip-btn {
