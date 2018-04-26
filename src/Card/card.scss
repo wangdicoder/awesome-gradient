@@ -1,0 +1,47 @@
+$border-radius: 10px;
+
+.card-container {
+  border-radius: $border-radius;
+  margin: 25px;
+  box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+  transition: all 300ms;
+  .clip-btn {
+    display: none;
+  }
+  &:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 114px 0 rgba(0, 0, 0, 0.08), 0 30px 25px 0 rgba(0, 0, 0, 0.05);
+    .clip-btn {
+      display: block;
+    }
+  }
+}
+
+.color-panel {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.label-panel {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.label-panel span {
+  display: block;
+  font-size: 13px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.clip-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  cursor: pointer;
+}
