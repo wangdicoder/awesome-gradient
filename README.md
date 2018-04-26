@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="awesome-gradient" src="https://github.com/wangdicoder/awesome-gradient/tree/master/img/logo.png" width="208">
+  <img alt="awesome-gradient" src="https://github.com/wangdicoder/awesome-gradient/blob/master/img/logo.png" width="208">
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
 
 ## Awesome Gradient
 
-![img](https://github.com/wangdicoder/awesome-gradient/tree/master/img/screenshot.png)
+![img](https://github.com/wangdicoder/awesome-gradient/blob/master/img/screenshot.png)
 
 
 
