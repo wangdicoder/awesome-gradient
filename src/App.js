@@ -9,6 +9,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header>
+                    <img src={require('./logo.png')} alt="logo" className="logo"/>
                     <h1>Awesome Gradient</h1>
                     <a className="github-button" href="https://github.com/wangdicoder/awesome-gradient"
                        data-show-count="true" aria-label="Star wangdicoder/awesome-gradient on GitHub">Star</a>

@@ -3,11 +3,16 @@
 }
 
 main {
-    padding: 0 10%;
+    padding: 0 10% 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
 header{
     padding-top: 50px;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
 }
