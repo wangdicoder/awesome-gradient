@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import './card.css';
 import PropTypes from 'prop-types';
+import Notification from 'rc-notification';
+
+let notification = null;
+Notification.newInstance({prefixCls: 'copy-message-container', style: {}}, (n) => notification = n);
 
 export default class Card extends Component {
 
@@ -41,9 +45,9 @@ export default class Card extends Component {
     _onClick(text) {
         const content = `background-image: ${text};`;
         if (window.clipboardData && window.clipboardData.setData) {
+            this._displayMessage();
             // IE specific code path to prevent textarea being shown while dialog is visible.
             return window.clipboardData.setData("Text", content);
-
         } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
             const textarea = document.createElement("textarea");
             textarea.textContent = content;
@@ -51,6 +55,7 @@ export default class Card extends Component {
             document.body.appendChild(textarea);
             textarea.select();
             try {
+                this._displayMessage();
                 return document.execCommand("copy");  // Security exception may be thrown by some browsers.
             } catch (e) {
                 console.warn("Copy to clipboard failed.", e);
@@ -59,5 +64,18 @@ export default class Card extends Component {
                 document.body.removeChild(textarea);
             }
         }
+    }
+
+    _displayMessage() {
+        const key = new Date().toString();
+
+        notification.notice({
+            key,
+            onClose: () => {
+                notification.removeNotice(key);
+            },
+            content: <span className="copy-message">Code Copied 👌</span>,
+            duration: 2,
+        });
     }
 }

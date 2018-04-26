@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.copy-message-container {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  .copy-message {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08), 0 6px 18px 0 rgba(0, 0, 0, 0.05);
+  }
+}
