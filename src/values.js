@@ -39,4 +39,9 @@ export default [
     'linear-gradient(135deg, #FFF1EB, #ACE0F9)',
     'linear-gradient(135deg, #D1FDFF, #FDDB92)',
     'linear-gradient(135deg, #00DBDE, #FC00FF)',
+    'linear-gradient(135deg, #FF57B9, #A704FD)',
+    'linear-gradient(135deg, #B3EB50, #429421)',
+    'linear-gradient(135deg, #E3E3E3, #5D6874)',
+    'linear-gradient(135deg, #0FF0B3, #036ED9)',
+    'linear-gradient(135deg, #FC0D1B, #FC23DA)',
 ]
