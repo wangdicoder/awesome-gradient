@@ -78,7 +78,7 @@ export default class Card extends Component {
             onClose: () => {
                 notification.removeNotice(key);
             },
-            content: <span className="copy-message">Code Copied 👌</span>,
+            content: <span className="copy-message" role="img" aria-label="img">Code Copied 👌</span>,
             duration: 2,
         });
     }
